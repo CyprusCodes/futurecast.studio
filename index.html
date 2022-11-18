@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureCast - Full Stack Digital Agency</title>
+    <script src="./assets/scripts/typed.min.js" async onload="initAnimation()"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <navbar>
+            <div>what</div>
+            <div id="logo-wrapper">future<span id="logo-highlight">cast</span></div>
+            <div id="toggle-wrapper">
+                <div class="toggle-menu-button">
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </navbar>
+        <div id="promo-container">
+            <div id="promo-left">
+                <div id="p-line-1">
+                    Your Future
+                </div>
+                <div id="p-line-2">
+                    <div id="typed-strings">
+                        <p><em>Development</em></p>
+                        <p><em>Marketing</em></p>
+                        <p><em>Support</em></p>
+                        <p><em>Cast</em></p>
+                    </div>
+                    <span id="typed"></span>
+                </div>
+                <div id="p-line-3">
+                    Team
+                </div>
+            </div>
+            <div id="promo-right">
+                <img id="lightbulb-img" src="./assets/images/lightbulb.png">
+            </div>
+        </div>
+    </header>
+    <script>
+        function initAnimation() {
+            new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                loop: true,
+                typeSpeed: 50,
+                backSpeed: 30,
+                smartBackspace: true,
+                backDelay: 1000,
+            });
+        }
+    </script>
+</body>
+
+</html>
