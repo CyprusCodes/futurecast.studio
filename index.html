@@ -117,6 +117,8 @@
     <div>more text here</div>
     <div>more text here</div>
     <script>
+        const lightOnImg = document.getElementById("lightbulb-on-img");
+        const lightOffImg = document.getElementById("lightbulb-off-img");
 
         function easeInQuint(elapsed, initialValue, amountOfChange, duration) {
             return amountOfChange * (elapsed /= duration) * elapsed * elapsed * elapsed * elapsed + initialValue;
@@ -167,13 +169,10 @@
             return start;
         }
 
-        const lightOnImg = document.getElementById("lightbulb-on-img");
-        const lightOffImg = document.getElementById("lightbulb-off-img");
-
         const lightUpAnimation = animate((newValue) => {
             lightOnImg.style.opacity = newValue;
             lightOffImg.style.opacity = 1 - newValue;
-        }, easeOutBack, 1000, 0, 1);
+        }, easeOutBack, 500, 0, 1);
 
         const lightOffAnimation = animate((newValue) => {
             lightOnImg.style.opacity = newValue;
@@ -202,10 +201,27 @@
 
         window.addEventListener("scroll", function () {
             const distance = window.scrollY;
-            const newOpacity = map(distance, 0, 300, 0, 1);
+            console.log(distance)
+            if (distance < 200) return;
 
-            document.querySelector("#lightbulb-on-img").style.opacity = newOpacity;
-            document.querySelector("#lightbulb-off-img").style.opacity = 1 - newOpacity;
+            if (distance > 485) {
+                lightOffImg.style["object-position"] = `0px ${distance - 485}px`
+                lightOnImg.style["object-position"] = `0px ${distance - 485}px`
+            } else {
+                let newOffset = distance - 200;
+                // const newOffset = map(distance, 200, 400, 0, 100);
+                let transform = `translateY(${newOffset}px)`;
+                lightOnImg.style.transform = transform;
+                lightOnImg.style.webkitTransform = transform;
+                lightOnImg.style.msTransform = transform;
+                lightOffImg.style.transform = transform;
+                lightOffImg.style.webkitTransform = transform;
+                lightOffImg.style.msTransform = transform;
+
+                lightOffImg.style["object-position"] = `0px 0px`
+                lightOnImg.style["object-position"] = `0px 0px`
+            }
+
         })
     </script>
 </body>
