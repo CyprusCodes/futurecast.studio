@@ -18,8 +18,7 @@
     <header>
         <navbar>
             <div id="nav-col-1">
-                <a class="hire-us-btn"
-                    href="https://www.stormbrain.com/hire-us/" role="button">
+                <a class="hire-us-btn" href="https://www.stormbrain.com/hire-us/" role="button">
                     <span class="elementor-button-content-wrapper">
                         <span class="elementor-button-text">HIRE US</span>
                     </span>
@@ -38,30 +37,149 @@
             </div>
         </navbar>
         <div id="promo-container">
-            <div id="promo-left">
-                <div id="p-line-1">
-                    Your Future
-                </div>
-                <div id="p-line-2">
-                    <div id="typed-strings">
-                        <p><em>Development</em></p>
-                        <p><em>Marketing</em></p>
-                        <p><em>Support</em></p>
-                        <p><em>Cast</em></p>
+            <div id="promo-wrap">
+                <div id="promo-left">
+                    <div id="p-line-1">
+                        Your Future
                     </div>
-                    <span id="typed"></span>
+                    <div id="p-line-2">
+                        <div id="typed-strings">
+                            <p><em>Development</em></p>
+                            <p><em>Marketing</em></p>
+                            <p><em>Support</em></p>
+                            <p><em>Cast</em></p>
+                        </div>
+                        <span id="typed"></span>
+                    </div>
+                    <div id="p-line-3">
+                        Team
+                    </div>
                 </div>
-                <div id="p-line-3">
-                    Team
+                <div id="promo-right">
+                    <img id="lightbulb-on-img" src="./assets/images/light-on-no-hue.png">
+                    <img id="lightbulb-off-img" src="./assets/images/light-off.png">
                 </div>
-            </div>
-            <div id="promo-right">
-                <img id="lightbulb-on-img" src="./assets/images/light-on-no-hue.png">
-                <img id="lightbulb-off-img" src="./assets/images/light-off.png">
             </div>
         </div>
     </header>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
+    <div>more text here</div>
     <script>
+
+        function easeInQuint(elapsed, initialValue, amountOfChange, duration) {
+            return amountOfChange * (elapsed /= duration) * elapsed * elapsed * elapsed * elapsed + initialValue;
+        }
+
+        function easeOutBack(
+            elapsed,
+            initialValue,
+            amountOfChange,
+            duration,
+            s
+        ) {
+            if (!s) {
+                s = 1.70158;
+            }
+            return (
+                amountOfChange *
+                ((elapsed = elapsed / duration - 1) * elapsed * ((s + 1) * elapsed + s) +
+                    1) +
+                initialValue
+            );
+        }
+
+        function animate(animateFn, easingFn, durationParam, startValueParam, endValueParam,) {
+            const duration = durationParam;
+            const startValue = startValueParam;
+            const amountOfChange = endValueParam;
+            let startTime;
+
+            function tick(onEnd) {
+                const elapsed = Date.now() - startTime;
+                animateFn(easingFn(elapsed, startValue, amountOfChange, duration));
+
+                if (elapsed < duration) {
+                    requestAnimationFrame(() => tick(onEnd));
+                } else {
+                    if (onEnd) {
+                        onEnd();
+                    }
+                }
+            }
+
+            function start(onEnd) {
+                startTime = Date.now();
+                tick(onEnd);
+            }
+
+            return start;
+        }
+
+        const lightOnImg = document.getElementById("lightbulb-on-img");
+        const lightOffImg = document.getElementById("lightbulb-off-img");
+
+        const lightUpAnimation = animate((newValue) => {
+            lightOnImg.style.opacity = newValue;
+            lightOffImg.style.opacity = 1 - newValue;
+        }, easeOutBack, 1000, 0, 1);
+
+        const lightOffAnimation = animate((newValue) => {
+            lightOnImg.style.opacity = newValue;
+            lightOffImg.style.opacity = 1 - newValue;
+        }, easeInQuint, 1500, 1, -1);
+
         function initAnimation() {
             new Typed('#typed', {
                 stringsElement: '#typed-strings',
@@ -69,9 +187,26 @@
                 typeSpeed: 50,
                 backSpeed: 30,
                 smartBackspace: true,
-                backDelay: 1000,
+                backDelay: 2000,
+                onStringTyped: (arrayPos, self) => {
+                    lightUpAnimation(() => {
+                        lightOffAnimation();
+                    });
+                },
             });
         }
+
+        function map(x, in_min, in_max, out_min, out_max) {
+            return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+        }
+
+        window.addEventListener("scroll", function () {
+            const distance = window.scrollY;
+            const newOpacity = map(distance, 0, 300, 0, 1);
+
+            document.querySelector("#lightbulb-on-img").style.opacity = newOpacity;
+            document.querySelector("#lightbulb-off-img").style.opacity = 1 - newOpacity;
+        })
     </script>
 </body>
 

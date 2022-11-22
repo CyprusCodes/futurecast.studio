@@ -185,6 +185,9 @@ navbar {
 #promo-right {
     flex: 1;
     position: relative;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 #lightbulb-on-img {
@@ -197,4 +200,8 @@ navbar {
     height: 500px;
     position: absolute;
     top: 0;
+}
+
+#promo-wrap {
+    display: flex;
 }
