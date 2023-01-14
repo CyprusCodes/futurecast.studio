@@ -56,66 +56,39 @@
                     </div>
                 </div>
                 <div id="promo-right">
-                    <img id="lightbulb-on-img" src="./assets/images/light-on-no-hue.png">
-                    <img id="lightbulb-off-img" src="./assets/images/light-off.png">
+                    <img id="lightbulb-on-img" src="./assets/images/light-on-no-hue.png" alt="hue"/>
+                    <img id="lightbulb-off-img" src="./assets/images/light-off.png" alt="hue"/>
                 </div>
             </div>
         </div>
     </header>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
-    <div>more text here</div>
+    <div class="partners">
+        <img src="https://wearepower.net/images/power-logo.svg" alt=""/>
+        <img src="https://i.ibb.co/NStjgt6/Adobe-Corporate-logo-svg.png" alt=""/>
+        <img src="https://productivemachines.co.uk/images/ll2.png" alt=""/>
+        <img src="https://tred.earth/wp-content/uploads/2021/08/@logo_green.svg" alt=""/>
+        <img src="https://cypruscodes.com/media/brand/5f0723b7447bd64e267ba448_Fatsoma.png" alt=""/>
+        <img src="https://cypruscodes.com/media/brand/Telsim_Logo.jpg" alt=""/>
+        <img src="https://cypruscodes.com/media/brand/yataylogogigem.png" alt=""/>
+    </div>
+   	<div class="container">
+      <div class="card">
+        <h1 class="title">Development</h1>
+        <p class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quaerat expedita iure, iusto natus unde officiis consequatur consequuntur nisi quam molestiae excepturi delectus aperiam alias quo odio sapiente eligendi accusamus!.</p>
+        <button class="btn">Get Started</button>
+      </div>
+       <div class="card">
+        <h1 class="title">Marketing</h1>
+        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel, facere fugiat, reprehenderit recusandae blanditiis nisi quia provident laborum porro consectetur non laboriosam. Placeat aut, ea corporis sit consequuntur aperiam?.</p>
+        <button class="btn">Get Started</button>
+      </div>
+       <div class="card">
+        <h1 class="title">Support</h1>
+        <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur unde veritatis provident libero alias est nihil iste accusantium, nisi rerum! Odit aliquid provident fugiat excepturi sed sit ut nemo ab..</p>
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="blob"></div>
+    </div>
     <script>
         const lightOnImg = document.getElementById("lightbulb-on-img");
         const lightOffImg = document.getElementById("lightbulb-off-img");
@@ -204,9 +177,9 @@
             console.log(distance)
             if (distance < 200) return;
 
-            if (distance > 485) {
-                lightOffImg.style["object-position"] = `0px ${distance - 485}px`
-                lightOnImg.style["object-position"] = `0px ${distance - 485}px`
+            if (distance > 250) {
+                lightOffImg.style["object-position"] = `0px ${distance - 250}px`
+                lightOnImg.style["object-position"] = `0px ${distance - 250}px`
             } else {
                 let newOffset = distance - 200;
                 // const newOffset = map(distance, 200, 400, 0, 100);
