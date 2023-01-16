@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 :root {
     --color-primary: #232323;
     --color-secondary: #6A6CFF;
@@ -7,11 +8,12 @@
     --typography-primary-font-weight: 500;
 }
 
+
 body {
-    /* background: rgb(235, 218, 254); */
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(235, 218, 254, 0.3);
+    /* background: rgba(255, 255, 255, 0.1); */
         backdrop-filter: blur(77px);
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 * {
@@ -224,49 +226,69 @@ navbar {
 }
 
 .card {
-    width: 350px;
-    min-height: 250px;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 1rem;
+    height: 490px;
+    width: 364px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.14);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 40px;
     padding: 1.5rem;
     z-index: 10;
-    color: whitesmoke;
+}
+.card img{
+    width: 135px;
+    height: 135px;
+}
+.img-div-card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-top: 50px;
+}
+.img-text-card{
+    padding: 30px;
 }
 
 .title {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
+    font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #485466;
 }
 
 .subtitle {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+font-family: 'Nunito';
+    font-style: normal;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #5A6980;
+    padding-top: 23px;
+    padding-bottom: 40px;
 }
 
 .btn {
-    background: none;
-    border: none;
-    text-align: center;
-    font-size: 1rem;
-    color: whitesmoke;
-    background-color: #fa709a;
-
-    padding: 0.8rem 1.8rem;
-    border-radius: 2rem;
-    cursor: pointer;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4E92F9;
+        margin-top: 20px;
+}
+.btn img{
+    height: 12.586572647094727px;
+    width: 24.00055694580078px;
 }
 
 .blob {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: linear-gradient(180deg,
-            rgba(47, 184, 255, 0.42) 31.77%,
-            #5c9df1 100%);
+  background: linear-gradient(180deg, rgba(78, 146, 249, 0) 0%, rgba(78, 146, 249, 0.21) 100%);
+  border-radius: 145px;
     mix-blend-mode: color-dodge;
     -webkit-animation: move 25s infinite alternate;
     animation: move 25s infinite alternate;
@@ -310,14 +332,34 @@ navbar {
 }
 
 .partners{
-    height: 153px;
+    height: 115px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    border-bottom: 1px #A2BDE5 solid;
 }
 
 .partners img{
-    width: 10%;
+    width:8%;
+}
+.big-title{
+    font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #242A33;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 10px;
+}
+.big-subtitle{
+    font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #5A6980;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
 }
