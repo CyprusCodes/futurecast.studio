@@ -6,6 +6,7 @@
     --color-accent: #BD71FF;
     --typography-primary-font-family: "PT Sans", sans-serif;
     --typography-primary-font-weight: 500;
+    
 }
 
 
@@ -361,5 +362,126 @@ font-family: 'Nunito';
         color: #5A6980;
         width: 50%;
         margin: auto;
+        margin-bottom: 85px;
+}
+
+.icon-subtitle{
+display: flex;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+width: 1140px;
+height: 201px;
+justify-content: center;
+margin: auto;
+
+}
+.description img{
+    width: 114px;
+    height: 98px; 
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0px;
+   gap: 24px;
+  width: 364px;
+   height: 201px;
+}
+.description h2{
+    width: 162px;
+    height: 27px; 
+   font-family: 'Nunito';
+   font-style: normal;
+   font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #6C7E99;
+}
+.description p{
+    width: 286px;
+    height: 44px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #7E92B3;
+}
+
+@media only screen and (max-width: 768px) {
+    .icon-subtitle {
+        flex-direction: column;
+        height: initial;
+        width: initial;
+    }
+    .description{
+        padding: 20px;
+    }
+    .big-subtitle {
         margin-bottom: 30px;
+    }
+  }
+
+  .creative-team{
+    display: flex;
+    justify-content: center;
+    gap: 122px;
+    align-items: center;
+    margin-top: 93px;
+    
+  }
+  .creative-text h2{
+    width: 460px;
+    height: 96px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #242A33;
+    margin: 24px;
+  }
+  .creative-text p{
+    width: 461px;
+    height: 66px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #5A6980;
+    margin: 24px;
+  }
+.creative-img img{
+    width: 400px;
+   height: 400px;
+   left: 0px;
+   top: 0px;
+
+}
+#creative-btn{
+    background: transparent;
+    padding: 7px 16px;
+    margin: 24px;
+    gap: 10px;   
+   width: 113px;
+   height: 36px;
+   border-radius: 8px;
+   background-clip: text;
+   box-sizing: border-box;
+   background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   --background-clip: text;
+   --text-fill-color: transparent;
+   border: 1px solid #6A6CFF;
+   
+
 }
