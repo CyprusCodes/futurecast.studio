@@ -332,7 +332,7 @@ font-family: 'Nunito';
     }
 }
 
-.partners{
+/* .partners{
     height: 115px;
     display: flex;
     align-items: center;
@@ -342,7 +342,7 @@ font-family: 'Nunito';
 
 .partners img{
     width:8%;
-}
+} */
 .big-title{
     font-style: normal;
         font-weight: 700;
@@ -539,4 +539,86 @@ margin: auto;
  
  .item:nth-child(6) {
     grid-row-end: span 3;
+}
+
+.swiper {
+    /* width: 600px;
+    height: 300px; */
+    width: 90%;
+    margin-top: 40px !important;
+}
+.swiper-wrapper{
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+}
+
+.swiper-slide img{
+width: 50%;
+}
+
+.swiper-pagination{
+    bottom: 0 !important;
+}
+
+ @media (max-width:768px) {
+    navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+    #nav-col-3{
+        display: none;
+    }
+    #promo-wrap{
+            flex-direction: column;
+            width: 100%;
+        }
+    #promo-left, #p-line-2{
+        font-size: 50px;
+    }
+    #promo-left{
+            min-width: 100%;
+        }
+    #promo-right{
+            min-width: 100%;
+        }
+    #promo-container{
+        padding: 30px;
+        min-height: 100px;
+    }
+    #lightbulb-on-img{
+            height: 380px;
+        }
+   #lightbulb-off-img {
+            height: 380px;
+        }
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        width: 70%;
+        height: 300px;
+    }
+    .img-div-card img{
+        width: 80px;
+        height: 80px;
+    }
+    .img-div-card{
+        margin-bottom: initial;
+        margin-top: initial;
+    }
+    .subtitle{
+        padding-bottom: 20px;
+    }
+    .big-subtitle{
+        width: initial;
+    }
+    .big-title{
+        margin-top: 60px;
+    }
+    .swiper-slide{
+        width: 300px !important;
+    }
  }
