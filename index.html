@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -62,21 +64,32 @@
             </div>
         </div>
     </header>
+
+
     <div class="part-section">
-        <div  class="partners">
-        <img src="https://wearepower.net/images/power-logo.svg" alt=""/>
-        <img src="https://i.ibb.co/NStjgt6/Adobe-Corporate-logo-svg.png" alt=""/>
-        <img src="https://productivemachines.co.uk/images/ll2.png" alt=""/>
-        <img src="https://tred.earth/wp-content/uploads/2021/08/@logo_green.svg" alt=""/>
-        <img src="https://cypruscodes.com/media/brand/5f0723b7447bd64e267ba448_Fatsoma.png" alt=""/>
-        <img src="https://cypruscodes.com/media/brand/Telsim_Logo.jpg" alt=""/>
-        <img src="https://cypruscodes.com/media/brand/yataylogogigem.png" alt=""/>
-        </div>
-        
-        <div>
+    
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">   <img src="https://wearepower.net/images/power-logo.svg" alt=""/></div>
+    <div class="swiper-slide"> <img src="https://i.ibb.co/NStjgt6/Adobe-Corporate-logo-svg.png" alt=""/></div>
+    <div class="swiper-slide"><img src="https://productivemachines.co.uk/images/ll2.png" alt=""/></div>
+    <div class="swiper-slide"><img src="https://tred.earth/wp-content/uploads/2021/08/@logo_green.svg" alt=""/></div>
+    <div class="swiper-slide"><img src="https://cypruscodes.com/media/brand/5f0723b7447bd64e267ba448_Fatsoma.png" alt=""/></div>
+    <div class="swiper-slide"><img src="https://cypruscodes.com/media/brand/Telsim_Logo.jpg" alt=""/></div>
+    <div class="swiper-slide"> <img src="https://i.ibb.co/8jrkHY1/logo-2.png" alt=""/></div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+</div>
+
+  <div>
         <img src="./assets/images/line.png" alt="" width="100%" height="2px">
         </div>
-    </div>
+  
+  </div>
    
 
     <div>
@@ -105,7 +118,7 @@
         </div>
      <div class="img-text-card">
         <h1 class="title">Marketing</h1>
-        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel, facere fugiat, reprehenderit recusandae blanditiis nisi.</p>
+        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel, facere fugiat, reprehenderit recusandae.</p>
          <a class="btn">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
      </div>
         
@@ -116,7 +129,7 @@
         </div>
        <div class="img-text-card">
  <h1 class="title">Support</h1>
-        <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur unde veritatis provident libero alias est nihil iste.</p>
+        <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur unde veritatis provident libero alias est.</p>
          <a class="btn">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
        </div>
        
@@ -133,8 +146,6 @@
     </div>
 
 </div>
-
-
 
     <script>
         const lightOnImg = document.getElementById("lightbulb-on-img");
@@ -244,6 +255,31 @@
 
         })
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+//    pagination: {
+//     el: '.swiper-pagination',
+//   },
+   slidesPerView: 1,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2000,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1.5,
+        },
+        1024: {
+            slidesPerView: 5,
+        },
+    },
+});
+</script>
 </body>
 
 </html>
