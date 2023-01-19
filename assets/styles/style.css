@@ -219,11 +219,10 @@ navbar {
     align-items: center;
     position: relative;
     overflow: hidden;
-    /* background: #1f1f47 !important; */
-
     gap: 30px;
-        /* padding: 30px; */
-        padding: 30px 0px;
+    padding: 30px 0px;
+        margin-bottom: 50px;
+        
 }
 
 .card {
@@ -286,63 +285,26 @@ font-family: 'Nunito';
 
 .blob {
     position: absolute;
-    width: 100px;
-    height: 100px;
-  background: linear-gradient(180deg, rgba(78, 146, 249, 0) 0%, rgba(78, 146, 249, 0.21) 100%);
-  border-radius: 145px;
-    mix-blend-mode: color-dodge;
-    -webkit-animation: move 25s infinite alternate;
-    animation: move 25s infinite alternate;
-    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    width: 239px;
+    height: 239px;
+    left: 50px;
+    top: 0;
+    background: linear-gradient(180deg, rgba(78, 146, 249, 0) 0%, rgba(78, 146, 249, 0.21) 100%);
+    border-radius: 145px;
 }
 
-.blob:hover {
-    width: 120px;
-    height: 120px;
-    -webkit-filter: blur(30px);
-    filter: blur(30px);
-    box-shadow:
-        inset 0 0 0 5px rgba(255, 255, 255, 0.6),
-        inset 10px 10px 0 0px #fa709a,
-        inset 20px 20px 0 0px #784ba8,
-        inset 30px 30px 0 0px #2b86c5;
+.blob-yellow {
+    position: absolute;
+        width: 250px;
+        height: 250px;
+        /* left: 0; */
+        right: 0;
+        background: linear-gradient(165.74deg, rgba(255, 186, 39, 0.17) 10.13%, rgba(255, 222, 152, 0.17) 86.62%);
+        filter: blur(127px);
+        border-radius: 112px;
+        /* z-index: 100; */
+        top: 200px;
 }
-
-@-webkit-keyframes move {
-    from {
-        transform: translate(-100px, -50px) rotate(-90deg);
-        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-
-    to {
-        transform: translate(500px, 100px) rotate(-10deg);
-        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
-}
-
-@keyframes move {
-    from {
-        transform: translate(-100px, -50px) rotate(-90deg);
-        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-
-    to {
-        transform: translate(500px, 100px) rotate(-10deg);
-        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
-}
-
-/* .partners{
-    height: 115px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.partners img{
-    width:8%;
-} */
 .big-title{
     font-style: normal;
         font-weight: 700;
@@ -392,6 +354,8 @@ margin: auto;
    gap: 24px;
   width: 364px;
    height: 201px;
+   margin: auto;
+   z-index: 2;
 }
 .description h2{
     width: 162px;
@@ -416,17 +380,44 @@ margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
+
+    .blob-yellow {
+           top: initial !important;
+           bottom: 0 !important;
+        }
     .icon-subtitle {
         flex-direction: column;
         height: initial;
         width: initial;
     }
-    .description{
+    /* .description{
         padding: 20px;
-    }
+    } */
     .big-subtitle {
         margin-bottom: 30px;
     }
+    .creative-team{
+        flex-direction: column;
+        margin-top: 40px !important;
+        gap: 30px !important;
+    }
+    .creative-team.ct{
+        flex-direction: column-reverse !important;
+    }
+    .creative-img{
+        display: contents;
+    }
+    .creative-img img{
+        width: 80% !important;
+        height: initial !important;
+    }
+    .creative-text p, .creative-text h2{
+        width: initial !important;
+        height: initial !important;
+    }
+        #creative-btn{
+            display: none;
+        }
   }
 
   .creative-team{
@@ -560,8 +551,44 @@ width: 50%;
 .swiper-pagination{
     bottom: 0 !important;
 }
+.feature{
+    background: rgba(255, 255, 255, 0.4);
+    padding: 50px 0px;
+    position: relative;
+}
+.blue-blob{
+    position: absolute;
+    width: 841px;
+    height: 841px;
+    left: -421px;
+    top: 421px;
+    background: radial-gradient(83.29% 83.29% at 50% 50%, rgba(78, 146, 249, 0.2) 0%, rgba(78, 146, 249, 0) 100%);
+    filter: blur(127px);
+    z-index: 1;
+}
+
+.green-blob {
+position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(75.86% 75.86% at 50% 50%, rgba(0, 240, 255, 0.2) 0%, rgba(0, 240, 255, 0) 100%);
+    filter: blur(127px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    right: 0;
+    bottom: 200px;
+    z-index: 1;
+
+}
 
  @media (max-width:768px) {
+    .blue-blob{
+        position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 0;
+            bottom: 0;
+            top: initial !important;
+    }
     navbar{
         flex-direction: column;
         align-items: center;
