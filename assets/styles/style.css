@@ -720,12 +720,132 @@ cursor: pointer;
 .center{
     padding: 20px;
 }
+.testimonial-section{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 70px;
+}
+#testimonial-header{
+        height: 80px;
+        font-size: 40px;
+        line-height: 48px;
+        color: #242A33;
+}
+#testimonial-para{
+    width: 50%;
+    height: 95px;
+    font-size: 16px;
+    line-height: 140%;
+    color: #5A6980;
+    margin: auto;
+}
+.testimonial-subsection{
+    display: flex;
+    justify-content: center;
+    gap: 122px;
+   
+}
+#img-testimo{
+    width: 400px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+}
+#icon-testimo{
+    
+    width: 95px;
+    height: 75.06px;
+    gap: 60px;
+    display: flex;
+    align-items: flex-start;
+}
+.testimonial-text h2{
+    width: 519px;
+    height: 70px;
+    font-size: 32px;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.testimonial-text p{
+    width: 558px;
+    height: 43px;
+    font-size: 16px;
+    line-height: 140%;
+    color: #6C7E99;
+    text-align: left;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 20px;
+    height: 32px;
+    margin: initial;
+    margin-top: 65px;
+}
+.stars img{
+    width: 18px;
+    height: 18px;
+}
+#stars1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #363F4D;
+}
+
+
 
 
 
 
 
  @media (max-width:768px) {
+    #blog-header {
+         margin-top: initial; 
+        
+    }
+    .testimonial-section {
+        padding: 45px;
+    }
+  .stars {
+    margin-top: 20px;
+   }
+    .testimonial-text p{
+        width: initial !important;
+        height: initial !important
+    }
+    #icon-testimo {
+        display: initial;
+       
+    }
+    #testimonial-para{
+        width: initial !important;
+        height: initial !important
+    }
+    #testimonial-header{
+        width: initial !important;
+        height: initial !important;
+        padding-bottom: 14px;
+    }
+    #img-testimo{
+        width: 100% !important;
+        height: initial !important;
+    }
+    .testimonial-subsection{
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 30px;
+    }
     .blog-section{
         flex-direction: column;
         padding-top: 50px;
