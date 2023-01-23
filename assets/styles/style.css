@@ -295,15 +295,54 @@ font-family: 'Nunito';
 
 .blob-yellow {
     position: absolute;
-        width: 250px;
-        height: 250px;
-        /* left: 0; */
-        right: 0;
-        background: linear-gradient(165.74deg, rgba(255, 186, 39, 0.17) 10.13%, rgba(255, 222, 152, 0.17) 86.62%);
-        filter: blur(127px);
-        border-radius: 112px;
-        /* z-index: 100; */
-        top: 200px;
+    width: 250px;
+    height: 250px;
+    right: 0;
+    background: linear-gradient(165.74deg, rgba(255, 186, 39, 0.4) 10.13%, rgba(255, 222, 152, 0.9) 86.62%);
+    filter: blur(127px);
+    border-radius: 112px;
+    top: 200px;
+}
+.blob-green{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 150px;
+    top: 100px;
+    background: radial-gradient(73.42% 73.42% at 50% 50%, rgba(0, 232, 179, 0.3) 0%, rgba(0, 232, 179, 0) 100%);
+    filter: blur(127px);
+    z-index: 1;
+}
+.blob-orange{
+    position: absolute;
+    width: 715px;
+    height: 715px;
+    right: 0;
+    top: 450px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 61, 37, 0.2) 0%, rgba(255, 0, 17, 0) 100%);
+    filter: blur(127px);
+}
+.square-purple-blob{
+    position: absolute;
+        width: 414.77px;
+        height: 414.77px;
+        left: -300px;
+        background: linear-gradient(167.37deg, rgba(78, 146, 249, 0.1) 9.15%, rgba(195, 129, 219, 0) 98.94%);
+        filter: blur(7.5px);
+        border-radius: 36px;
+        transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+        bottom: 200px;
+}
+.square-green-blob{
+        position: absolute;
+        width: 310.87px;
+        height: 310.87px;
+        left: -200px;
+        background: linear-gradient(180deg, rgba(0, 232, 179, 0.1) 0%, rgba(0, 232, 179, 0) 100%);
+        filter: blur(7.5px);
+        border-radius: 36px;
+        transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
+        bottom: 10px;
 }
 .big-title{
     font-style: normal;
@@ -398,7 +437,6 @@ margin: auto;
     }
     .creative-team{
         flex-direction: column;
-        margin-top: 40px !important;
         gap: 30px !important;
     }
     .creative-team.ct{
@@ -418,6 +456,10 @@ margin: auto;
         #creative-btn{
             display: none;
         }
+
+    .grid {
+        grid-template-columns: auto !important;
+    }
   }
 
   .creative-team{
@@ -425,8 +467,14 @@ margin: auto;
     justify-content: center;
     gap: 122px;
     align-items: center;
-    margin-top: 93px;
     
+  }
+  .about-us{
+    padding: 60px 0px;
+    position: relative;
+  }
+  .creative-text, .creative-img{
+    z-index: 2;
   }
   .creative-text h2{
     width: 460px;
@@ -496,16 +544,12 @@ margin: auto;
 
 
 .grid {
-    display: grid;
+   
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    grid-auto-rows: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     border: 2px solid #fff;
-    box-sizing: border-box;
     background: linear-gradient(137.73deg, rgba(255, 255, 255, 0) 4.16%, rgba(255, 255, 255, 0.5) 102.02%);
-   -webkit-text-fill-color: transparent;
-   --background-clip: text;
-   --text-fill-color: transparent;
     border-radius: 27px;
     margin: auto;
     padding: 30px;
@@ -523,14 +567,6 @@ margin: auto;
    height: 100%;
    width: 100%;
  }
- 
- .item:nth-child(even) {
-    grid-row-end: span 2;
- }
- 
- .item:nth-child(6) {
-    grid-row-end: span 3;
-}
 
 .swiper {
     /* width: 600px;
@@ -559,19 +595,19 @@ width: 50%;
 .blue-blob{
     position: absolute;
     width: 841px;
-    height: 841px;
-    left: -421px;
-    top: 421px;
-    background: radial-gradient(83.29% 83.29% at 50% 50%, rgba(78, 146, 249, 0.2) 0%, rgba(78, 146, 249, 0) 100%);
+    height: 400px;
+    left: -700px;
+    background: radial-gradient(83.29% 83.29% at 50% 50%, rgba(78, 146, 249, 0.2) 0%, rgba(78, 146, 249, 0.4) 100%);
     filter: blur(127px);
     z-index: 1;
+    bottom: 0;
 }
 
 .green-blob {
 position: absolute;
     width: 500px;
     height: 500px;
-    background: radial-gradient(75.86% 75.86% at 50% 50%, rgba(0, 240, 255, 0.2) 0%, rgba(0, 240, 255, 0) 100%);
+    background: radial-gradient(75.86% 75.86% at 50% 50%, rgba(0, 240, 255, 0.1) 0%, rgba(0, 240, 255, 0) 100%);
     filter: blur(127px);
     transform: matrix(1, 0, 0, -1, 0, 0);
     right: 0;
@@ -589,11 +625,12 @@ position: absolute;
     padding-bottom: 30px;
 }
 #blog-header{
-    margin-top: 50px;
+    padding-top: 50px;
    gap: 10px;
    height: 65px;
    text-align: center;
    align-items: center;
+   font-size: 40px;
 
 }
 #blog-para{
@@ -802,10 +839,65 @@ cursor: pointer;
     line-height: 22px;
     color: #363F4D;
 }
+.contact-section-inside{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+}
+.contact-section{
+    background: rgba(255, 255, 255, 0.4);
+}
 .contact-section h1{
    text-align: center;
    align-items: center;
    font-size: 40px;
+    padding: 50px 0px;
+   
+}
+.contact1 input{
+    border: 2px solid;
+    border-image-source: linear-gradient(137.21deg, rgba(255, 255, 255, 0.6) 43.78%, rgba(243, 243, 243, 0.252) 106.72%);
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Nunito';
+    font-size: 16px;
+    line-height: 140%;
+    color: #90A8CC;
+    padding: 5px 30px;
+    max-width: 411px;
+    background: linear-gradient(130.17deg, rgba(255, 255, 255, 0.136) 2.38%, rgba(255, 255, 255, 0.85) 98.89%),
+            linear-gradient(137.21deg, rgba(255, 255, 255, 0.6) 43.78%, rgba(243, 243, 243, 0.252) 106.72%);
+}
+.contact1 textarea{
+    border: 2px solid;
+    border-image-source: linear-gradient(137.21deg, rgba(255, 255, 255, 0.6) 43.78%, rgba(243, 243, 243, 0.252) 106.72%);
+    width: 100%;
+    height: 144px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-family: 'Nunito';
+    font-size: 16px;
+    line-height: 140%;
+    resize: none;
+    color: #90A8CC;
+    max-width: 411px;
+    background: linear-gradient(130.17deg, rgba(255, 255, 255, 0.136) 2.38%, rgba(255, 255, 255, 0.85) 98.89%),
+            linear-gradient(137.21deg, rgba(255, 255, 255, 0.6) 43.78%, rgba(243, 243, 243, 0.252) 106.72%);
+}
+.contact1 button{
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    border-radius: 18px;
+    border: none;
+    color: #fff;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
 }
 .contact1{
     box-sizing: border-box;
@@ -814,29 +906,74 @@ cursor: pointer;
     align-items: flex-start;
     padding: 24px;
     gap: 24px;
-    width: 459px;
-    height: 372px;
-    background: linear-gradient(137.73deg, rgba(255, 255, 255, 0) 4.16%, rgba(255, 255, 255, 0.5) 102.02%);
+    width: 525px;
+    height: 445px;
+    background: rgba(235, 218, 254, 0.1);
     backdrop-filter: blur(42px);
     border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 7%);
+}
+.contact2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Nunito';
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(0,0,0, 0.7);
+}
+.contact-infos{
+    display: flex;
+        gap: 20px;
+}
+.contact-infos-img{
+    background: rgb(255,255,255);
+        padding: 10px;
+        border-radius: 7px;
+        width: 30%;
+}
+.blog{
+    background: rgba(255, 255, 255, 0.4);
 }
 
-
-
-
-
-
-
  @media (max-width:768px) {
+    .blob-green{
+        width: 100%;
+            height: 250px;
+            left: 0;
+            top: 200px;
+    }.blob-orange{
+        width: 100%;
+        bottom: 0;
+        top: initial !important;
+        left: 0;
+    }
+
+    .contact-section-inside {
+        gap: 50px;
+    }
+    .contact-section-inside{
+        flex-direction: column;
+    }
+    .contact1{
+        width: 90%;
+    }
+    .contact1 input,.contact1 textarea{
+        width: 80%;
+    }
     .testimonial-text h2{
         width: initial !important
         }
+
+    #blog-para{
+        width: initial !important;
+    }
     #blog-header {
          margin-top: initial; 
         
     }
     .testimonial-section {
-        padding: 45px;
+        padding: 25px;
     }
   .stars {
     margin-top: 20px;
@@ -876,8 +1013,7 @@ cursor: pointer;
             width: 300px;
             height: 300px;
             left: 0;
-            bottom: 0;
-            top: initial !important;
+            top: 400px;
     }
     navbar{
         flex-direction: column;
