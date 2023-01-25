@@ -315,11 +315,11 @@ font-family: 'Nunito';
 }
 .blob-orange{
     position: absolute;
-    width: 715px;
-    height: 715px;
-    right: 0;
-    top: 450px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 61, 37, 0.2) 0%, rgba(255, 0, 17, 0) 100%);
+    width: 300px;
+    height: 300px;
+    right: 300px;
+    top: 350px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 61, 37, 0.4) 0%, rgba(255, 0, 17, 0) 100%);
     filter: blur(127px);
 }
 .square-purple-blob{
@@ -344,6 +344,30 @@ font-family: 'Nunito';
         transform: matrix(0.87, -0.5, -0.5, -0.87, 0, 0);
         bottom: 10px;
 }
+.square-orange-blob{
+        position: absolute;
+            width: 201.97px;
+            height: 201.97px;
+            background: linear-gradient(164.27deg, rgba(255, 176, 7, 0.1) 10.99%, rgba(255, 176, 7, 0) 113.57%);
+            filter: blur(7.5px);
+            border-radius: 37px;
+            transform: rotate(-30deg);
+            right: -100px;
+            top: 100px;
+}
+.square-blue-blob{
+    position: absolute;
+        width: 280px;
+        height: 280px;
+        /* left: 1699.76px; */
+        top: 290px;
+        background: linear-gradient(164.27deg, rgba(78, 146, 249, 0.1) 10.99%, rgba(195, 129, 219, 0) 113.57%);
+        filter: blur(7.5px);
+        border-radius: 36px;
+        transform: rotate(-30deg);
+        right: -150px;
+    }
+
 .big-title{
     font-style: normal;
         font-weight: 700;
@@ -472,6 +496,7 @@ margin: auto;
   .about-us{
     padding: 60px 0px;
     position: relative;
+    overflow: hidden;
   }
   .creative-text, .creative-img{
     z-index: 2;
@@ -591,6 +616,7 @@ width: 50%;
     background: rgba(255, 255, 255, 0.4);
     padding: 50px 0px;
     position: relative;
+    overflow: hidden;
 }
 .blue-blob{
     position: absolute;
