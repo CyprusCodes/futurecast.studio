@@ -641,6 +641,9 @@ position: absolute;
     z-index: 1;
 
 }
+.blog{
+    position: relative;
+}
 .blog-section{
     align-items: center;
     text-align: center;
@@ -881,6 +884,9 @@ cursor: pointer;
     padding: 50px 0px;
    
 }
+.contact-section{
+    padding-bottom: 80px;
+}
 .contact1 input{
     border: 2px solid;
     border-image-source: linear-gradient(137.21deg, rgba(255, 255, 255, 0.6) 43.78%, rgba(243, 243, 243, 0.252) 106.72%);
@@ -960,11 +966,14 @@ cursor: pointer;
 }
 .blog{
     background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    z-index: 2;
 }
 .brochure{
     align-items: center;
     text-align: center;
     margin: 30px;
+    padding: 35px;
 }
 .brochure h2{
         height: 70px;
@@ -1080,6 +1089,63 @@ cursor: pointer;
 }
 #footer-text i{
     color: red;
+}
+.footer-section{
+    background: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+}
+.blob-orange1{
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    left: -100px;
+    top: 242px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 176, 7, 0.6) 0%, rgba(255, 176, 7, 0) 100%);
+    filter: blur(127px);
+    z-index: -1;
+}
+.blob-blue1{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 62, 255, 0.5) 0%, rgba(7, 77, 255, 0) 100%);
+    filter: blur(127px);
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+.project-section{
+    position: relative;
+    z-index: 2;
+}
+.blob-red{
+    position: absolute;
+    width: 239px;
+    height: 500px;
+    left: 360px;
+    top: 182px;
+    background: linear-gradient(161.26deg, rgba(255, 28, 0, 0.14) 12.67%, rgba(255, 28, 0, 0) 99.27%);
+    filter: blur(102px);
+    z-index: -10;
+}
+.blob-blue2{
+    position: absolute;
+    width: 461px;
+    height: 461px;
+    left: -109px;
+    top: 66px;
+    filter: blur(102px);
+    background: radial-gradient(52.01% 52.01% at 67.65% 52.01%, rgba(78, 146, 249, 0.2) 0%, rgba(78, 146, 249, 0) 100%);
+    z-index: -1;
+}
+.blob-yellow2{
+    position: absolute;
+    width: 249px;
+    height: 567px;
+    top: -90px;
+    background: radial-gradient(52.01% 52.01% at 67.65% 52.01%, rgba(255, 214, 0, 0.4) 0%, rgba(255, 199, 0, 0) 100%);
+    filter: blur(102px);
+    right: 0;
 }
 
 
