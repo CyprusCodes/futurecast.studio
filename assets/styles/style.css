@@ -212,7 +212,6 @@ navbar {
 }
 
 .container {
-    /* min-height: 100vh; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -220,8 +219,7 @@ navbar {
     position: relative;
     overflow: hidden;
     gap: 30px;
-    padding: 30px 0px;
-        margin-bottom: 50px;
+    padding: 30px 0px 80px 0px;
         
 }
 
@@ -233,7 +231,7 @@ navbar {
         -webkit-backdrop-filter: blur(18px);
         border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 40px;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     z-index: 10;
 }
 .card img{
@@ -560,8 +558,6 @@ margin: auto;
 }
 #project-paragraph{
     width: 50%;
-    height: 44px;
-    align-items: center;
     text-align: center;
     margin: auto;
     color: #5A6980;
@@ -615,7 +611,7 @@ width: 50%;
 }
 .feature{
     background: rgba(255, 255, 255, 0.4);
-    padding: 50px 0px;
+    padding: 0px 0px 50px 0px;
     position: relative;
     overflow: hidden;
 }
@@ -641,6 +637,17 @@ position: absolute;
     bottom: 200px;
     z-index: 1;
 
+}
+.carreau-green{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 100px;
+    top: 200px;
+    border: 6px solid #21D4DF;
+    border-radius: 4.70588px;
+    transform: rotate(23.4deg);
+    z-index: 1;
 }
 .blog{
     position: relative;
@@ -788,10 +795,8 @@ cursor: pointer;
     padding: 20px;
 }
 .testimonial-section{
-    align-items: center;
     text-align: center;
-    margin: auto;
-    padding: 70px;
+    padding: 70px 0px;
 }
 #testimonial-header{
         height: 80px;
@@ -983,10 +988,8 @@ cursor: pointer;
     z-index: 2;
 }
 .brochure{
-    align-items: center;
     text-align: center;
-    margin: 30px;
-    padding: 35px;
+    padding: 90px 0px;
     position: relative;
 }
 .blob-blue3{
@@ -1045,7 +1048,11 @@ cursor: pointer;
     border-radius: 18px;
     color: #ffffff;
     border: none;
-    box-shadow: 0px 5px 12px #a6c6f5;
+    box-shadow: 0px 5px 20px rgb(155 188 240);
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
 }
 .footer{
     display: flex;
@@ -1062,18 +1069,16 @@ cursor: pointer;
 }
 .footer-icons{
     display: flex;
-    gap: 12px;
-    align-items: center;
+    gap: 15px;
     text-align: center;
 }
 .footer-icons a {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    border: 1px solid;
-    align-items: center;
-    padding: 2px;
-    margin: 1px;
+    font-size: 30px;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 .footer h4{
         height: 27px;
@@ -1136,8 +1141,8 @@ cursor: pointer;
 }
 .footer-section{
     background: rgba(255, 255, 255, 0.4);
-    padding: 30px;
     position: relative;
+    overflow: hidden;
 }
 .blob-orange1{
     position: absolute;
