@@ -442,6 +442,7 @@ margin: auto;
     color: #7E92B3;
 }
 
+
 @media only screen and (max-width: 768px) {
 
     .blob-yellow {
@@ -876,6 +877,8 @@ cursor: pointer;
 }
 .contact-section{
     background: rgba(255, 255, 255, 0.4);
+    padding-bottom: 80px;
+    position: relative;
 }
 .contact-section h1{
    text-align: center;
@@ -884,8 +887,18 @@ cursor: pointer;
     padding: 50px 0px;
    
 }
-.contact-section{
-    padding-bottom: 80px;
+
+.blob-contact{
+    background: rgba(235, 218, 254, 0.3);
+    right: 10px;
+    width: 60%;
+    margin: auto;
+    height: 289px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    border-radius: 30px 0px 0px 30px;
+    bottom: 165px;
 }
 .contact1 input{
     border: 2px solid;
@@ -974,6 +987,37 @@ cursor: pointer;
     text-align: center;
     margin: 30px;
     padding: 35px;
+    position: relative;
+}
+.blob-blue3{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 0;
+    background: linear-gradient(159.49deg, rgba(208, 227, 255, 0) 12.55%, rgba(0, 102, 255, 0.294) 114.68%);
+    filter: blur(12.5px);
+    border-radius: 50%;
+    bottom: -80px;
+}
+.blob-blue4{
+    position: absolute;
+    width: 163px;
+    height: 163px;
+    top: 80px;
+    background: linear-gradient(161deg, rgba(0, 102, 255, 0) -3.15%, rgba(0, 102, 255, 0.24) 115.18%);
+    filter: blur(12.5px);
+    right: 307px;
+    border-radius: 50%;
+}
+.blob-red3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(71.11% 71.11% at 67.65% 52.01%, rgba(250, 137, 123, 0.6) 0%, rgba(250, 137, 123, 0) 100%);
+    filter: blur(105px);
+    right: 0px;
+    border-radius: 20px;
+    bottom: 0;
 }
 .brochure h2{
         height: 70px;
@@ -1093,6 +1137,7 @@ cursor: pointer;
 .footer-section{
     background: rgba(255, 255, 255, 0.4);
     padding: 30px;
+    position: relative;
 }
 .blob-orange1{
     position: absolute;
@@ -1147,9 +1192,32 @@ cursor: pointer;
     filter: blur(102px);
     right: 0;
 }
+.blob-yellow3{
+    position: absolute;
+    width: 194px;
+    height: 350px;
+    left: 0;
+    background: radial-gradient(54.43% 54.43% at 50% 50%, rgba(255, 176, 7, 0.72) 0%, rgba(255, 176, 7, 0) 100%);
+    filter: blur(107.5px);
+    bottom: -100px;
+}
 
 
  @media (max-width:768px) {
+    .footer-section{
+        overflow: hidden;
+    }
+    .blob-orange1{
+        left: 0;
+        bottom: 0;
+        top: initial;
+        width: 300px;
+    }
+    .blob-red{
+      left: 0;
+      bottom: 0;
+      top: initial;
+    }
     #footer-text{
         flex-direction: column;
         gap: 20px;
