@@ -67,6 +67,7 @@ navbar {
 
 #p-line-1 {
     line-height: 65px;
+    color: #fff;
 }
 
 #p-line-2 {
@@ -87,6 +88,7 @@ navbar {
 
 #p-line-3 {
     line-height: 65px;
+    color: #fff;
 }
 
 #typed-strings {
@@ -241,8 +243,8 @@ navbar {
 .img-div-card{
     display: flex;
     justify-content: center;
-    margin-bottom: 45px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 35px;
 }
 .img-text-card{
     padding: 30px;
@@ -265,7 +267,7 @@ font-family: 'Nunito';
     line-height: 140%;
     color: #5A6980;
     padding-top: 23px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .btn {
@@ -377,15 +379,9 @@ font-family: 'Nunito';
         margin-bottom: 10px;
 }
 .big-subtitle{
-    font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
         text-align: center;
         color: #5A6980;
-        width: 50%;
-        margin: auto;
-        margin-bottom: 85px;
+        margin-bottom: 60px;
 }
 
 .icon-subtitle{
@@ -401,7 +397,7 @@ margin: auto;
 }
 .description img{
     width: 114px;
-    height: 98px; 
+    height: 114px; 
     align-items: center;
     justify-content: center;
 }
@@ -427,6 +423,7 @@ margin: auto;
   font-size: 20px;
   line-height: 27px;
   color: #6C7E99;
+  text-align: center;
 }
 .description p{
     width: 286px;
@@ -442,6 +439,16 @@ margin: auto;
 
 
 @media only screen and (max-width: 768px) {
+
+    #project-paragraph{
+        padding: 20px;
+    }
+.description{
+    margin-bottom: 20px;
+}
+    .img-text-card{
+        padding: 0px 30px;
+    }
 
     .blob-yellow {
            top: initial !important;
@@ -502,7 +509,6 @@ margin: auto;
   }
   .creative-text h2{
     width: 460px;
-    height: 96px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -513,11 +519,10 @@ margin: auto;
   }
   .creative-text p{
     width: 461px;
-    height: 66px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 140%;
     color: #5A6980;
     margin: 24px;
@@ -552,14 +557,12 @@ margin: auto;
     align-items: center;
     padding: 10px;
    gap: 10px;
-  
-   height: 68px;
+   font-size: 40px;
+   font-weight: 700;
    text-align: center;
 }
 #project-paragraph{
-    width: 50%;
     text-align: center;
-    margin: auto;
     color: #5A6980;
     padding-bottom: 60px;
 }
@@ -574,7 +577,7 @@ margin: auto;
     background: linear-gradient(137.73deg, rgba(255, 255, 255, 0) 4.16%, rgba(255, 255, 255, 0.5) 102.02%);
     border-radius: 27px;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
     width: 80%;
  }
  
@@ -583,11 +586,14 @@ margin: auto;
    object-position: center;
    width: 100%;
    height: 100%;
+   border-radius: 10px;
  }
  
  .item {
    height: 100%;
    width: 100%;
+   border: 2px solid rgba(235, 218, 254, 1);
+    border-radius: 10px;
  }
 
 .swiper {
@@ -671,8 +677,6 @@ position: absolute;
 
 }
 #blog-para{
-    width: 45%;
-    height: 44px;
     align-items: center;
     text-align: center;
     color: #5A6980;
@@ -696,20 +700,19 @@ position: absolute;
     
 }
 .card1 h2{
-    width: 210px;
-    height: 80px;
     font-size: 15px;
     line-height: 20px;
     color: #485466;
-    text-align: center;
-    align-items: center;
-    padding-top: 20px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 .card1 img{
     width: 40px;
     height: 40px;
     position: absolute;
     left: 20px;
+    border-radius: 50%;
 }
 #line{
      margin: 12px;
@@ -717,20 +720,14 @@ position: absolute;
      border: 1px solid rgba(78, 146, 249, 0.2); ;
 }
 #card-tile{
-    padding: 0px;
-    gap: 23.5px;
-    width: 87px;
     background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    left: 22px;
-    height: 18px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
 }
 #paragra{
     width: 195px;
@@ -805,12 +802,8 @@ cursor: pointer;
         color: #242A33;
 }
 #testimonial-para{
-    width: 50%;
-    height: 95px;
-    font-size: 16px;
-    line-height: 140%;
     color: #5A6980;
-    margin: auto;
+    margin-bottom: 50px;
 }
 .testimonial-subsection{
     display: flex;
@@ -847,7 +840,6 @@ cursor: pointer;
 }
 .testimonial-text p{
     width: 558px;
-    height: 43px;
     font-size: 16px;
     line-height: 140%;
     color: #6C7E99;
@@ -862,7 +854,7 @@ cursor: pointer;
     width: 20px;
     height: 32px;
     margin: initial;
-    margin-top: 65px;
+    margin-top: 10px;
 }
 .stars img{
     width: 18px;
@@ -1009,7 +1001,7 @@ cursor: pointer;
     top: 80px;
     background: linear-gradient(161deg, rgba(0, 102, 255, 0) -3.15%, rgba(0, 102, 255, 0.24) 115.18%);
     filter: blur(12.5px);
-    right: 307px;
+    right: 600px;
     border-radius: 50%;
 }
 .blob-red3{
@@ -1021,6 +1013,66 @@ cursor: pointer;
     right: 0px;
     border-radius: 20px;
     bottom: 0;
+}
+.line-mauve{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #C46DE3;
+    border-radius: 53px;
+    transform: rotate(-10.95deg);
+    right: 50px;
+    top: 200px;
+}
+.blog-carreau-blue{
+    position: absolute;
+    width: 32.44px;
+    height: 32.44px;
+    border: 6.48879px solid #4E92F9;
+    border-radius: 5.08925px;
+    transform: rotate(127.22deg);
+    top: 0;
+    left: 150px;
+}
+.blog-carreau-orange {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 551.33px;
+    border: 4px solid #EB6453;
+    border-radius: 3px;
+    transform: rotate(-28.43deg);
+    right: 150px;
+}
+.bro-line-orange{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 198.56px;
+    top: 245.35px;
+    border: 5px solid #EFAB18;
+    transform: rotate(-135.41deg);
+    border-radius: 50%;
+}
+.bro-carreau-blue{
+    position: absolute;
+    width: 32.04px;
+    height: 32.04px;
+    top: 300px;
+    border: 6.4088px solid #4E92F9;
+    border-radius: 5.02651px;
+    transform: rotate(-138.88deg);
+    right: 200px;
+}
+.bro-line-orange2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #EFAB18;
+    transform: rotate(-38.87deg);
+    right: 150px;
+    top: 0;
+    border-radius: 50%;
 }
 .brochure h2{
         height: 70px;
@@ -1067,6 +1119,12 @@ cursor: pointer;
     align-items: baseline;
     gap: 50px;
 }
+.footer-sub2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
 .footer-icons{
     display: flex;
     gap: 15px;
@@ -1081,11 +1139,8 @@ cursor: pointer;
     text-fill-color: transparent;
 }
 .footer h4{
-        height: 27px;
-        font-size: 20px;
-        line-height: 6px;
-        color: #5A6980;
-        align-items: center;
+    font-size: 20px;
+    color: #5A6980;
 }
 .footer p{
     font-weight: 400;
@@ -1094,28 +1149,21 @@ cursor: pointer;
     color: #7E92B3;
 }
 .footer-sub2 input{
-    border: 1px solid;
-    border-image-source: linear-gradient(137.21deg, rgba(255, 255, 255, 0.6) 43.78%, rgba(243, 243, 243, 0.252) 106.72%);
+    border: 1px solid #90A8CC;
     width: 100%;
-    height: 40px;
+    height: 35px;
     border-radius: 20px;
     font-family: 'Nunito';
     font-size: 16px;
-    line-height: 140%;
     color: #90A8CC;
-    padding: 5px 30px;
-    max-width: 411px;
-    background: linear-gradient(130.17deg, rgba(255, 255, 255, 0.136) 2.38%, rgba(255, 255, 255, 0.85) 98.89%), linear-gradient(137.21deg, rgba(255, 255, 255, 0.6) 43.78%, rgba(243, 243, 243, 0.252) 106.72%);
+    padding: 2px 20px;
 }
 .footer-sub2 h3{
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    line-height: 22px;
     color: #5A6980;
-    padding: 4px;
-    margin-bottom: 15px;
-    margin-top: 20px;
+    padding-bottom: 10px;
 }
 #footer-empty{
     width: 80%;
@@ -1232,9 +1280,8 @@ cursor: pointer;
         width: initial !important;
     }
     .footer-sub2{
-        align-items: center;
         text-align: center;
-        justify-content: center;
+        flex-direction: column;
     }
     .footer-sub1{
         flex-direction: column;
@@ -1281,7 +1328,11 @@ cursor: pointer;
 
     #blog-para{
         width: initial !important;
+        padding: 20px;
     }
+        .brochure p{
+            padding: 20px;
+        }
     #blog-header {
          margin-top: initial; 
         
@@ -1377,10 +1428,13 @@ cursor: pointer;
         margin-top: initial;
     }
     .subtitle{
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        padding-top: initial;
     }
     .big-subtitle{
         width: initial;
+        padding: 10px;
     }
     .big-title{
         margin-top: 60px;
