@@ -347,13 +347,28 @@
      <div class="contact-section">
                 <h1>Contact Us</h1>
                   <div class="contact-section-inside">
-
+ <form action="#" class="faq-form" id="contact" data-pixsaas="contact-forms" name="myForm">
         <div class="contact1">
-            <input type="text" placeholder="Name">
-            <input type="email" name="email" id="email"  placeholder="Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <button>Submit</button>
+                  <input type="text" name="name" class="form-control" placeholder="Full Name" id="names" />
+                <label class="alert-danger p-1" id="un" data-translate="name_must">Name must be filled out</label>
+           
+                <input type="email" name="email" id="email"  placeholder="Email">
+                 <label class="alert-danger p-1" id="trois" data-translate="email_must">Email must be filled out</label>
+
+          
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        
+            
+            <button type="button" id="submit-Contactform">Submit</button>
         </div>
+
+        <input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
+            <div class="row">
+              <div id="form-result3" class="form-result1">
+                <div class="content1"></div>
+              </div>
+            </div>
+        </form>
         <div class="contact2">
             <div class="contact-infos">
                 <div>
@@ -461,9 +476,18 @@
 
             <div>
             <h3>Subscribe to our newsletter</h3>
-            <input type="email" name="email" id="email"  placeholder="Email">
-            </div>
+             <form class="form-inline col-lg-6" name="newsletter-subscription" id="newsletter-subscription" 
+                    onsubmit="event.preventDefault(); return validateForm()"
+                            class="newsletter-form wow pixFadeUp" data-pixsaas="newsletter-subscription">
+            <input type="email" placeholder="Enter your email" class="form-control"
+                                    id="newsletter-form-email">
+             <button type="submit" class="btn btn-blue" id="newsletter-wiki-submit" style="display: none;">Subscribe</button>
 
+               <div id="form-result2" class="form-result alert">
+                                <div class="content"></div>
+                </div>
+             </form>
+            </div>
         </div>
      
       </div>
@@ -476,13 +500,9 @@
        </div>
        <div class="blob-yellow3"></div>
     </div>
-    
-    
-    
-   
-     
-
-        <script src="./assets/scripts/typed.min.js" async onload="initAnimation()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/scripts/typed.min.js" async onload="initAnimation()"></script>
+    <script src="./assets/scripts/form.js"></script>
 
     <script>
         const lightOnImg = document.getElementById("lightbulb-on-img");
@@ -643,6 +663,7 @@ function myFunction_2() {
   }
 }
 </script>
+<script src="//code.tidio.co/gy9yvy1svckvgwjczum3ebbt08zea23l.js" async></script>
 </body>
 
 </html>
