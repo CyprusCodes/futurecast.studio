@@ -68,32 +68,17 @@ $("#submit-Contactform").click(function () {
   if (!hasIssue) {
     var $formContact = $("#contact");
 
-    var jqxhr = $.ajax({
-      url: "https://api.cypruscodes.com/course-info",
-      method: "POST",
-      dataType: "json",
-      data: [
-        {
-          name: "name",
-          value: name,
-        },
-        {
-          name: "email",
-          value: email,
-        },
-        {
-          name: "language",
-          value: (
-            window.localStorage.getItem("language") || "tr"
-          ).toUpperCase(),
-        },
-      ],
-    });
+    var formData = $formContact.serializeArray();
+    var msgIndex = formData.findIndex((v) => v.name === "mesaj");
+    var msgData = formData.find((v) => v.name === "mesaj");
+    formData[msgIndex] = { name: "mesaj", value: "FutureCast Agency Message: " + msgData.value };
+    
+
     var jqxhr = $.ajax({
       url: "https://script.google.com/macros/s/AKfycby5uon9g-8uykVwtUgUqrWREvl4XXfn73x6gueKOiOAPfQYRxdNdnfiz7zUbb9TXL_-/exec",
       method: "GET",
       dataType: "json",
-      data: $formContact.serializeArray(),
+      data: formData,
       success: function success(data) {
         $('button[type="submit"]').removeClass("clicked");
         $("#submit-Contactform").html("Send Message");
@@ -110,7 +95,7 @@ $("#submit-Contactform").click(function () {
       },
       error: function error() {
         $('button[type="submit"]').removeClass("clicked");
-        $("#submit-Contactform").html("Gönder");
+        $("#submit-Contactform").html("Send Message");
         $("#submit-Contactform").prop("disabled", false);
         $("#form-result3")
           .addClass("alert-danger")

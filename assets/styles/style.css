@@ -1415,10 +1415,10 @@ cursor: pointer;
         min-height: 100px;
     }
     #lightbulb-on-img{
-            height: 380px;
+            height: 250px;
         }
    #lightbulb-off-img {
-            height: 380px;
+            height: 250px;
         }
     .container{
         flex-direction: column;
