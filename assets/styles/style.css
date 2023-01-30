@@ -9,6 +9,9 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background: rgba(235, 218, 254, 0.3);
@@ -293,6 +296,7 @@ font-family: 'Nunito';
         line-height: 22px;
         color: #4E92F9;
         margin-top: 20px;
+        text-decoration: none;
 }
 .btn img{
     height: 12.586572647094727px;

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FutureCast - Full Stack Digital Agency</title>
+    <meta name = "keywords" content = "FutureCast, Coding, Development, Web, Marketing" />
+    <meta name="description" content="FutureCast is offering a wide range of professional services including marketing, support, and technical services." />
+    <meta name = "author" content = "FutureCast Devs Team" />
 
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +24,7 @@
     <header>
         <navbar>
             <div id="nav-col-1">
-                <a class="hire-us-btn" href="#" role="button">
+                <a class="hire-us-btn" href="https://calendly.com/ersel-aker/30min" role="button" target="_blank" aria-label="hire-us">
                     <span class="elementor-button-content-wrapper">
                         <span class="elementor-button-text">HIRE US</span>
                     </span>
@@ -30,7 +33,7 @@
             <div id="nav-col-2">future<span id="logo-highlight">cast</span></div>
             <div id="nav-col-3">
                 <div class="toggle-menu-button">
-                    <a href="#" class="menu-btn">
+                    <a href="#second-part" class="menu-btn" aria-label="go-down">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -67,7 +70,7 @@
     </header>
 
 
-    <div class="part-section">
+    <div class="part-section" id="second-part">
     
     <div class="swiper">
   <!-- Additional required wrapper -->
@@ -75,7 +78,7 @@
 
     <div class="swiper-slide">   <img src="https://wearepower.net/images/power-logo.svg" alt=""/></div>
     <div class="swiper-slide"> <img src="https://i.ibb.co/NStjgt6/Adobe-Corporate-logo-svg.png" alt=""/></div>
-    <div class="swiper-slide"><img src="https://productivemachines.co.uk/images/ll2.png" alt=""/></div>
+    <div class="swiper-slide"><img src="./assets/images/ll2.png" alt=""/></div>
     <div class="swiper-slide"><img src="https://tred.earth/wp-content/uploads/2021/08/@logo_green.svg" alt=""/></div>
     <div class="swiper-slide"><img src="https://cypruscodes.com/media/brand/5f0723b7447bd64e267ba448_Fatsoma.png" alt=""/></div>
     <div class="swiper-slide"><img src="https://cypruscodes.com/media/brand/Telsim_Logo.jpg" alt=""/></div>
@@ -108,7 +111,7 @@
         <div class="img-text-card">
         <h1 class="title">Development</h1>
         <p class="subtitle">We are developers offering comprehensive development solutions in tech, with a strong focus on delivering high-quality and user-friendly end-products.</p>
-        <a class="btn">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
+        <a class="btn" href="https://calendly.com/ersel-aker/30min" target="_blank" aria-label="hire-us">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
         </div>
         
       
@@ -120,7 +123,7 @@
      <div class="img-text-card">
         <h1 class="title">Marketing</h1>
         <p class="subtitle">Experienced marketer with a proven track record of creating and implementing successful campaigns for clients in various industries, resulting in increased brand awareness and revenue growth.</p>
-         <a class="btn">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
+         <a class="btn" href="https://calendly.com/ersel-aker/30min" target="_blank" aria-label="hire-us">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
      </div>
         
       </div>
@@ -131,7 +134,7 @@
        <div class="img-text-card">
  <h1 class="title">Support</h1>
         <p class="subtitle">We have customer-focused support professional with a strong ability to troubleshoot and resolve technical issues, resulting in high customer satisfaction and retention rates.</p>
-         <a class="btn">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
+         <a class="btn" href="https://calendly.com/ersel-aker/30min" target="_blank" aria-label="hire-us">Get Started <img src="./assets/images/arrow.png" alt="arrow"/></a>
        </div>
        
       </div>
@@ -174,7 +177,10 @@
                       <p>Javascript, server-side, progressive framework</p>
                     </div>
                     <div class="description">
-                      <img src="/assets/images/Python-logo-notext.svg.png" alt="icon-email">
+                        <picture>
+                        <source type="image/png" srcset="/assets/images/Python-logo-notext.svg.png">
+                         <img src="/assets/images/Python-logo-notext.svg.png" alt="icon-email">
+                         </picture>
                       <h2>Python</h2>
                       <p>Python, data analysis, visualization, machine learning.</p>
                     </div>
@@ -194,7 +200,11 @@
     <div class="about-us">
             <div class="creative-team ct">
                 <div class="creative-img">
-                    <img src="./assets/images/Image.png" alt="image">
+                    <picture>
+                        <source type="image/png" srcset="./assets/images/Image.png">
+                        <img src="./assets/images/Image.png" alt="image">
+                    </picture>
+                    
                 </div>
                 <div class="creative-text">
                     <h2>About FutureCast</h2>
@@ -228,7 +238,10 @@
                     <button id="creative-btn" class="creative-btn-1" onclick="myFunction()">Read More</button>
                 </div>
                 <div class="creative-img">
+                     <picture>
+                    <source type = "image/png" srcset = "./assets/images/Image1.png">
                     <img src="./assets/images/Image1.png" alt="image">
+                    </picture>
             </div>
             </div>
 
@@ -248,10 +261,30 @@
        
     
         <div class="grid">
-            <div class="item"><img src="./assets/images/1.png" alt="img" /></div>
-            <div class="item"><img src="./assets/images/2.png" alt="img" /></div>
-            <div class="item"><img src="./assets/images/3.png" alt="img" /></div>
-            <div class="item"><img src="./assets/images/4.png" alt="img" /></div>
+            <div class="item">
+                  <picture>
+                <source type = "image/jpg" srcset = "./assets/images/1.jpg">
+                <img src="./assets/images/1.jpg" alt="img" />
+                </picture>
+            </div>
+            <div class="item">
+                  <picture>
+                <source type = "image/jpg" srcset = "./assets/images/2.jpg">
+                <img src="./assets/images/2.jpg" alt="img" />
+                </picture>
+            </div>
+            <div class="item">
+                 <picture>
+                <source type = "image/jpg" srcset = "./assets/images/3.jpg">
+                <img src="./assets/images/3.jpg" alt="img" />
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                <source type = "image/jpg" srcset = "./assets/images/4.jpg">
+                <img src="./assets/images/4.jpg" alt="img" />
+                </picture>
+            </div>
         </div>
         <div class="blob-orange1"></div>
         <div class="blob-blue1"></div>
@@ -265,7 +298,11 @@
            Hear from real users about their exceptional experiences with our product/service <br/> in our testimonials section.
         </p>
         <div class="testimonial-subsection">
-            <img src="./assets/images/Frame.png" alt="testimonial-img" id="img-testimo">
+              <picture>
+                <source type = "image/jpg" srcset = "./assets/images/Frame.png">
+                <img src="./assets/images/Frame.png" alt="testimonial-img" id="img-testimo">
+                </picture>
+          
             <div class="testimonial-text">
                 <img src="./assets/images/QuoteIcon.png" alt="testimonial-icon" id="icon-testimo">
                 <h2>Outstanding!!</h2>
@@ -466,10 +503,10 @@
             <div>
                  <h4>Follow Us</h4>
             <div class="footer-icons">
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100087776407744" target="_blank" aria-label="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/CyprusCodes" target="_blank" aria-label="twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/cypruscodes/" target="_blank" aria-label="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.youtube.com/@cypruscodes6281" target="_blank" aria-label="youtube"><i class="fa-brands fa-square-youtube"></i></a>
 
             </div>
             </div>
@@ -494,9 +531,9 @@
       <div id="footer-empty"></div>
       <div id="footer-text">
       
-           <p> All rights reserved @ <script>document.write(new Date().getFullYear());</script> cypruscodes.</p>
+           <p> All rights reserved @ 2023 FutureCast.</p>
        
-        <p>Made with <a href="https://cypruscodes.com/">  <i class="fa-solid fa-heart"></i> cypruscodes </a></p>
+        <p>Made with <a href="http://futurecast.studio/" aria-label="FC">  <i class="fa-solid fa-heart"></i> FutureCast Team </a></p>
        </div>
        <div class="blob-yellow3"></div>
     </div>
