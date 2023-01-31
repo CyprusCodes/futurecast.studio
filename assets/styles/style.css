@@ -456,6 +456,14 @@ margin: auto;
 
 
 @media only screen and (max-width: 768px) {
+    .hire-us-btn{
+        padding: 10px 20px;
+    }
+    #nav-col-2 {
+      
+        font-size: 35px;
+      
+    }
 
     #project-paragraph{
         padding: 20px;
@@ -1265,6 +1273,21 @@ cursor: pointer;
 
 
  @media (max-width:768px) {
+    .hire-us-btn {
+        font-size: 12px;
+    }
+    .bro-carreau-blue{
+        z-index: -1;
+    }
+    .bro-line-orange{
+        z-index: -1;
+    }
+    .line-mauve{
+        z-index: -1;
+    }
+    .carreau-green {
+        z-index: -1;
+    }
     .footer-section{
         overflow: hidden;
     }
@@ -1391,8 +1414,9 @@ cursor: pointer;
     navbar{
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 15px;
         text-align: center;
+        padding: 20px 50px;
     }
     #nav-col-3{
         display: none;
@@ -1402,16 +1426,17 @@ cursor: pointer;
             width: 100%;
         }
     #promo-left, #p-line-2{
-        font-size: 50px;
+        font-size: 45px
     }
     #promo-left{
             min-width: 100%;
+            align-items:center ;
         }
     #promo-right{
             min-width: 100%;
         }
     #promo-container{
-        padding: 30px;
+        padding: 10px 0px;
         min-height: 100px;
     }
     #lightbulb-on-img{
@@ -1425,7 +1450,7 @@ cursor: pointer;
     }
     .card{
         width: 70%;
-        height: 300px;
+        height: 330px;
     }
     .img-div-card img{
         width: 80px;
@@ -1433,7 +1458,7 @@ cursor: pointer;
     }
     .img-div-card{
         margin-bottom: initial;
-        margin-top: initial;
+        margin-top: 10px;
     }
     .subtitle{
         padding-bottom: 10px;
