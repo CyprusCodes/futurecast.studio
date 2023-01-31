@@ -1440,10 +1440,10 @@ cursor: pointer;
         min-height: 100px;
     }
     #lightbulb-on-img{
-            height: 250px;
+            height: 350px;
         }
    #lightbulb-off-img {
-            height: 250px;
+            height: 350px;
         }
     .container{
         flex-direction: column;
