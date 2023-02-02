@@ -1350,6 +1350,7 @@ cursor: pointer;
     }
     .contact1{
         width: 90%;
+        margin: auto;
     }
     .contact1 input,.contact1 textarea{
         width: 80%;
