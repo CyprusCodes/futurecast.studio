@@ -503,6 +503,7 @@ margin: auto;
     .creative-img img{
         width: 80% !important;
         height: initial !important;
+        margin-left: 33px;
     }
     .creative-text p, .creative-text h2{
         width: initial !important;
