@@ -30,6 +30,7 @@ header {
     background: rgb(235, 218, 254);
     background: linear-gradient(30deg, rgba(235, 218, 254, 1) 0%, rgba(225, 183, 255, 1) 31%, rgba(187, 172, 253, 1) 100%);
     height: 100vh;
+    overflow: hidden;
 }
 
 #promo-container {

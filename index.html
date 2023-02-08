@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header-wrapper">
         <navbar>
             <div id="nav-col-1">
                 <a class="hire-us-btn" href="https://calendly.com/ersel-aker/30min" role="button" target="_blank" aria-label="hire-us">
@@ -32,14 +32,6 @@
             </div>
             <div id="nav-col-2">future<span id="logo-highlight">cast</span></div>
             <div id="nav-col-3">
-                <div class="toggle-menu-button">
-                    <a href="#second-part" class="menu-btn" aria-label="go-down">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
             </div>
         </navbar>
         <div id="promo-container">
@@ -624,29 +616,21 @@
             return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
         }
 
+        let bulbContainer = document.getElementById("promo-right");
+        let topOffset = bulbContainer.getBoundingClientRect().top + 15;
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            topOffset = bulbContainer.getBoundingClientRect().top + 15;
+        });
+
         window.addEventListener("scroll", function () {
             const distance = window.scrollY;
-            console.log(distance)
-            if (distance < 200) return;
-
-            if (distance > 250) {
-                lightOffImg.style["object-position"] = `0px ${distance - 250}px`
-                lightOnImg.style["object-position"] = `0px ${distance - 250}px`
-            } else {
-                let newOffset = distance - 200;
-                // const newOffset = map(distance, 200, 400, 0, 100);
-                let transform = `translateY(${newOffset}px)`;
-                lightOnImg.style.transform = transform;
-                lightOnImg.style.webkitTransform = transform;
-                lightOnImg.style.msTransform = transform;
-                lightOffImg.style.transform = transform;
-                lightOffImg.style.webkitTransform = transform;
-                lightOffImg.style.msTransform = transform;
-
-                lightOffImg.style["object-position"] = `0px 0px`
-                lightOnImg.style["object-position"] = `0px 0px`
+            if (distance < topOffset) {
+                bulbContainer.style.marginTop = `0px`;
+                return;
             }
 
+            bulbContainer.style.marginTop = `${distance - topOffset}px`;
         })
     </script>
 
