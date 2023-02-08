@@ -617,10 +617,10 @@
         }
 
         let bulbContainer = document.getElementById("promo-right");
-        let topOffset = bulbContainer.getBoundingClientRect().top + 15;
+        let topOffset = bulbContainer.getBoundingClientRect().top + 15 + window.scrollY;
 
         document.addEventListener("DOMContentLoaded", function(event) {
-            topOffset = bulbContainer.getBoundingClientRect().top + 15;
+            topOffset = bulbContainer.getBoundingClientRect().top + 15 + window.scrollY;;
         });
 
         window.addEventListener("scroll", function () {
