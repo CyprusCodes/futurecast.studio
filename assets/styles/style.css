@@ -530,6 +530,7 @@ navbar {
     .creative-img img {
         width: 80% !important;
         height: initial !important;
+        margin-left: 33px;
     }
 
     .creative-text p,
@@ -1483,6 +1484,7 @@ navbar {
 
     .contact1 {
         width: 90%;
+        margin: auto;
     }
 
     .contact1 input,
