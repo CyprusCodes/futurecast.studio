@@ -415,13 +415,13 @@ navbar {
 }
 
 .in-good-company-sub {
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 48px;
     color: #242A33;
     text-align: center;
     margin-bottom: 50px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Nunito';
 }
 
 .big-title {
@@ -431,13 +431,20 @@ navbar {
     color: #242A33;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 60px;
 }
 
 .big-subtitle {
     text-align: center;
-    color: #5A6980;
+    /* color: #5A6980; */
+    font-family: 'Nunito';
+    font-size: 20px;
+    color: #333;
     margin-bottom: 60px;
+    line-height: 30px;
 }
 
 .icon-subtitle {
