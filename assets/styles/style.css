@@ -402,6 +402,28 @@ navbar {
     right: -150px;
 }
 
+.in-good-company {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 48px;
+    color: #242A33;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    margin-top: 40px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.in-good-company-sub {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: #242A33;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
 .big-title {
     font-weight: 700;
     font-size: 40px;
@@ -672,7 +694,7 @@ navbar {
 }
 
 .swiper-slide img {
-    width: 50%;
+    width: 80%;
 }
 
 .swiper-pagination {
