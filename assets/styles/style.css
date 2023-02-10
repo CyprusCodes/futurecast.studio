@@ -555,12 +555,6 @@ navbar {
         margin-left: 33px;
     }
 
-    .creative-text p,
-    .creative-text h2 {
-        width: initial !important;
-        height: initial !important;
-    }
-
     #creative-btn {
         display: none;
     }
@@ -591,7 +585,7 @@ navbar {
 
 .creative-text h2 {
     width: 460px;
-    font-family: 'PT Sans';
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
