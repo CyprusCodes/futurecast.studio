@@ -477,7 +477,7 @@ navbar {
 }
 .blog-content img{
     box-shadow: 0 8px 6px -6px black;
-    width: 80%;
+    width: 50%;
 }
 .blog-content h1{
     font-size: 25px;
@@ -502,14 +502,11 @@ navbar {
     color: #777;
 }
 #paragraph-blog{
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: none;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 40px;
     letter-spacing: 0;
     color: #3c4043;
-    margin-top: 20px;
+    margin-top: 10px;
    
 }
 #blog-line{
@@ -517,7 +514,7 @@ navbar {
     margin: auto;
 }
 .blog-paragraph{
-    width: 70%;
+    width: 60%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -563,7 +560,7 @@ navbar {
 .header-blog{
     background: rgb(235, 218, 254);
     background: linear-gradient(30deg, rgba(235, 218, 254, 1) 0%, rgba(225, 183, 255, 1) 31%, rgba(187, 172, 253, 1) 100%);
-    height: 16vh;
+    height: 13vh;
     overflow: hidden;
 }
 .good-company{
@@ -1763,4 +1760,17 @@ navbar {
     .swiper-slide {
         width: 300px !important;
     }
+    .blog-paragraph{
+        width: 90%;
+    }
+    .blog-content img{
+        width: 90%;
+    }
+    .header-blog{
+        height: 16vh;
+    }
+}
+.link-decor{
+    text-decoration: none;
+    color: inherit;
 }
