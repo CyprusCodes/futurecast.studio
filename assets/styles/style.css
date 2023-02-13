@@ -493,9 +493,125 @@ navbar {
     text-align: center;
     color: #333;
 }
+.blog-content{
+    text-align: center;
+    margin: auto;
+}
+.blog-content img{
+    box-shadow: 0 8px 6px -6px black;
+    width: 50%;
+}
+.blog-content h1{
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 38px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    color: #1e2022;
+    text-align: center;
+}
+#blog-info{
+    display: flex;
+    gap: 20px;
+    margin-left: 41px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+#blog-info a{
+    text-decoration: none;
+    color: #777;
+}
+#paragraph-blog{
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0;
+    color: #3c4043;
+    margin-top: 10px;
+   
+}
+#blog-line{
+    width: 60%;
+    margin: auto;
+}
+.blog-paragraph{
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blob-orange-blog{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 61, 37, 0.4) 0%, rgba(255, 0, 17, 0) 100%);
+    filter: blur(127px);
+    left: 0;
+}
+.blob-yellow2-blog{
+    position: absolute;
+    width: 249px;
+    height: 567px;
+    background: radial-gradient(52.01% 52.01% at 67.65% 52.01%, rgba(255, 214, 0, 0.4) 0%, rgba(255, 199, 0, 0) 100%);
+    filter: blur(102px);
+    right: 0;
+}
+.blog-carreau-orange-blog{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 765.33px;
+    border: 4px solid #EB6453;
+    border-radius: 3px;
+    transform: rotate(-28.43deg);
+    right: 134px;
+    z-index: -1;
+}
+.blob-yellow-blog1{
+    position: absolute;
+    width: 100%;
+    height: 479px;
+    background: radial-gradient(52.01% 52.01% at 67.65% 52.01%, rgba(255, 214, 0, 0.4) 0%, rgba(255, 199, 0, 0) 100%);
+    filter: blur(102px);
+    right: 180px;
+    bottom: 120px;
+    margin: auto;
+    z-index: -1;
+}
+.header-blog{
+    background: rgb(235, 218, 254);
+    background: linear-gradient(30deg, rgba(235, 218, 254, 1) 0%, rgba(225, 183, 255, 1) 31%, rgba(187, 172, 253, 1) 100%);
+    height: 13vh;
+    overflow: hidden;
+}
+.good-company{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 48px;
+    color: #242A33;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    margin-top: 45px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.good-company-sub{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #242A33;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Nunito';
+}
+
 
 
 @media only screen and (max-width: 768px) {
+    #img-blog img{
+        width: 100%;
+    }
     .hire-us-btn {
         padding: 10px 20px;
     }
@@ -1660,4 +1776,17 @@ navbar {
     .swiper-slide {
         width: 300px !important;
     }
+    .blog-paragraph{
+        width: 90%;
+    }
+    .blog-content img{
+        width: 90%;
+    }
+    .header-blog{
+        height: 16vh;
+    }
+}
+.link-decor{
+    text-decoration: none;
+    color: inherit;
 }
