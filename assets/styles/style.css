@@ -426,7 +426,6 @@ navbar {
 
 .big-title {
     font-weight: 700;
-    font-size: 40px;
     line-height: 48px;
     color: #242A33;
     text-align: center;
@@ -748,18 +747,26 @@ navbar {
 }
 
 #project-header {
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    font-size: 40px;
     font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #242A33;
     text-align: center;
+   
+    margin-bottom: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 60px;
 }
 
 #project-paragraph {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(36, 42, 51);
     text-align: center;
-    color: #5A6980;
-    padding-bottom: 60px;
+    margin-bottom: 50px;
+    font-family: Nunito;
 }
 
 
@@ -792,8 +799,7 @@ navbar {
 }
 
 .swiper {
-    /* width: 600px;
-    height: 300px; */
+   
     width: 90%;
     margin-top: 40px !important;
 }
@@ -1010,10 +1016,14 @@ navbar {
 }
 
 #testimonial-header {
-    height: 80px;
-    font-size: 40px;
     line-height: 48px;
     color: #242A33;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 60px;
 }
 
 #testimonial-para {
@@ -1319,10 +1329,6 @@ navbar {
 }
 
 .brochure h2 {
-    height: 70px;
-    font-size: 51px;
-    line-height: 80px;
-    text-align: center;
     background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1522,6 +1528,19 @@ navbar {
 
 
 @media (max-width:768px) {
+    .big-title{
+        font-size: 50px;
+    }
+    .creative-text p{
+        margin: auto;
+        width: 50%;
+    } 
+    .in-good-company-sub{
+        line-height: 30px;
+    }
+    .creative-text h2{
+        text-align: center;
+    }
     .hire-us-btn {
         font-size: 12px;
     }
@@ -1745,7 +1764,7 @@ navbar {
 
     .card {
         width: 70%;
-        height: 330px;
+        height: 380px;
     }
 
     .img-div-card img {
