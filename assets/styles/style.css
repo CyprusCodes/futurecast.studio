@@ -644,9 +644,7 @@ navbar {
         width: initial;
     }
 
-    /* .description{
-        padding: 20px;
-    } */
+    
     .big-subtitle {
         margin-bottom: 30px;
     }
@@ -808,6 +806,7 @@ navbar {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    
 }
 
 .swiper-slide img {
@@ -1391,6 +1390,7 @@ navbar {
     background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: auto;
     background-clip: text;
     text-fill-color: transparent;
 }
@@ -1525,9 +1525,39 @@ navbar {
     filter: blur(107.5px);
     bottom: -100px;
 }
+.form-inline{
+    display: inline-flex;
+    gap: 10px;
+}
+.btn-blue{
+    width: 168px;
+    height: 36px;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    border-radius: 18px;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0px 5px 20px rgb(155 188 240);
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 14px;
+}
 
 
 @media (max-width:768px) {
+   
+    .description p {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .btn-blue {
+        margin-top: 15px;
+    }
+    .form-inline{
+        display: block;
+    }
+    .in-good-company{
+        font-size: 50px;
+    }
     .big-title{
         font-size: 50px;
     }
@@ -1790,6 +1820,8 @@ navbar {
 
     .big-title {
         margin-top: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .swiper-slide {
