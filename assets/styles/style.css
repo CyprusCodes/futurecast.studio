@@ -438,8 +438,8 @@ navbar {
 
 .big-subtitle {
     text-align: center;
-    /* color: #5A6980; */
-    font-family: 'Nunito';
+    
+    font-family: 'PT Sans';
     font-size: 20px;
     color: #333;
     margin-bottom: 60px;
@@ -581,7 +581,7 @@ navbar {
 .header-blog{
     background: rgb(235, 218, 254);
     background: linear-gradient(30deg, rgba(235, 218, 254, 1) 0%, rgba(225, 183, 255, 1) 31%, rgba(187, 172, 253, 1) 100%);
-    height: 13vh;
+    height: 16vh;
     overflow: hidden;
 }
 .good-company{
@@ -740,6 +740,7 @@ navbar {
     --background-clip: text;
     --text-fill-color: transparent;
     border: 1px solid #6A6CFF;
+    cursor: pointer;
 
 
 }
@@ -806,6 +807,7 @@ navbar {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -1177,6 +1179,7 @@ navbar {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+    cursor: pointer;
 }
 
 .contact1 {
@@ -1540,10 +1543,21 @@ navbar {
     font-family: 'PT Sans';
     font-weight: 700;
     font-size: 14px;
+    cursor: pointer;
+}
+.link-decor{
+    text-decoration: none;
+    color: inherit;
+    margin-right: 175px;
 }
 
 
+
 @media (max-width:768px) {
+    
+    .swiper-wrapper {
+        justify-content: center;
+      }
    
     .description p {
         margin-left: 5px;
@@ -1836,8 +1850,13 @@ navbar {
     .header-blog{
         height: 16vh;
     }
-}
-.link-decor{
-    text-decoration: none;
-    color: inherit;
+    .link-decor{
+       
+        margin-right:initial;
+    }
+    .header-blog {
+       
+        height: 18vh;
+        
+    }
 }
