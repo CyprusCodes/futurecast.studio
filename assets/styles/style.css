@@ -438,8 +438,8 @@ navbar {
 
 .big-subtitle {
     text-align: center;
-    /* color: #5A6980; */
-    font-family: 'Nunito';
+    
+    font-family: 'PT Sans';
     font-size: 20px;
     color: #333;
     margin-bottom: 60px;
@@ -581,7 +581,7 @@ navbar {
 .header-blog{
     background: rgb(235, 218, 254);
     background: linear-gradient(30deg, rgba(235, 218, 254, 1) 0%, rgba(225, 183, 255, 1) 31%, rgba(187, 172, 253, 1) 100%);
-    height: 13vh;
+    height: 16vh;
     overflow: hidden;
 }
 .good-company{
@@ -644,9 +644,7 @@ navbar {
         width: initial;
     }
 
-    /* .description{
-        padding: 20px;
-    } */
+    
     .big-subtitle {
         margin-bottom: 30px;
     }
@@ -742,6 +740,7 @@ navbar {
     --background-clip: text;
     --text-fill-color: transparent;
     border: 1px solid #6A6CFF;
+    cursor: pointer;
 
 
 }
@@ -808,6 +807,8 @@ navbar {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    
 }
 
 .swiper-slide img {
@@ -1178,6 +1179,7 @@ navbar {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+    cursor: pointer;
 }
 
 .contact1 {
@@ -1391,6 +1393,7 @@ navbar {
     background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: auto;
     background-clip: text;
     text-fill-color: transparent;
 }
@@ -1525,9 +1528,55 @@ navbar {
     filter: blur(107.5px);
     bottom: -100px;
 }
+.form-inline{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+.btn-blue{
+    width: 168px;
+    height: 36px;
+    background: linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+    border-radius: 18px;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0px 5px 20px rgb(155 188 240);
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.link-decor{
+    text-decoration: none;
+    color: inherit;
+    margin-right: 175px;
+}
+
 
 
 @media (max-width:768px) {
+    
+    .swiper-wrapper {
+        justify-content: center;
+      }
+   
+    .description p {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .btn-blue {
+        margin-top: 15px;
+    }
+    .form-inline{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+            
+    }
+    .in-good-company{
+        font-size: 50px;
+    }
     .big-title{
         font-size: 50px;
     }
@@ -1790,10 +1839,12 @@ navbar {
 
     .big-title {
         margin-top: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .swiper-slide {
-        width: 300px !important;
+        width: 240px !important;
     }
     .blog-paragraph{
         width: 90%;
@@ -1804,8 +1855,13 @@ navbar {
     .header-blog{
         height: 16vh;
     }
-}
-.link-decor{
-    text-decoration: none;
-    color: inherit;
+    .link-decor{
+       
+        margin-right:initial;
+    }
+    .header-blog {
+       
+        height: 18vh;
+        
+    }
 }
