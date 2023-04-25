@@ -1531,6 +1531,7 @@ navbar {
 .form-inline{
     display: inline-flex;
     gap: 10px;
+    align-items: center;
 }
 .btn-blue{
     width: 168px;
@@ -1567,7 +1568,11 @@ navbar {
         margin-top: 15px;
     }
     .form-inline{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+            
     }
     .in-good-company{
         font-size: 50px;
@@ -1839,7 +1844,7 @@ navbar {
     }
 
     .swiper-slide {
-        width: 300px !important;
+        width: 240px !important;
     }
     .blog-paragraph{
         width: 90%;
