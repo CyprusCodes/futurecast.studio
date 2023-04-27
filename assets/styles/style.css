@@ -1865,3 +1865,22 @@ navbar {
         
     }
 }
+
+@media (max-width:768px) {
+.img-mobile {
+        display: flex !important;
+        align-items: center;
+        gap: 30px;
+        padding: 0px 30px;
+    }
+
+    .img-mobile div img {
+        width: 100%;
+    }
+        .swiper {
+            display: none;
+        }
+}
+.img-mobile{
+    display: none;
+}
